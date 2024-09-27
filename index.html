@@ -1,18 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goit-js-hw-12</title>
-    <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
-  </head>
-  <body>
+<html lang="tr">
 
-    <main>
-      <!-- Loads the specified .html file -->
-    </main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>goit-js-hw-11</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
 
-  </body>
+
+  <!-- <script type="module" src="./main.js" defer></script> -->
+
+  <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-Qob_5Ba8.js">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-DumFYO8Z.css">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-oH6Hp_74.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+    <h1>Görsel Arama</h1>
+    <form id="search-form">
+
+      <input type="text" id="search-input" placeholder="Please enter your keyword" >
+
+      <button type="submit">Search</button>
+
+    </form>
+  </div>
+
+
+
+  <!-- Loading spinner -->
+  <div id="loading-spinner" style="display: none;"></div>
+
+  <ul id="gallery"></ul>
+
+  <button id="load-more" style="display: none;">Daha Fazla Yükle</button>
+
+</body>
+
 </html>
