@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (!query) {
             iziToast.warning({
-                title: 'Uyarı',
-                message: 'Lütfen bir arama terimi girin!',
+                title: 'Warning',
+                message: 'Please enter a search term!',
             });
             return;
         }
@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (data.hits.length === 0) {
                 iziToast.error({
-                    title: 'Hata',
-                    message: 'Görsel bulunamadı. Lütfen tekrar deneyin!',
+                    title: 'Warning',
+                    message: 'Image not found. Please try again!',
                 });
                 return;
             }
@@ -70,10 +70,10 @@ document.addEventListener("DOMContentLoaded", () => {
             spinner.style.display = 'none';
 
             iziToast.error({
-                title: 'Hata',
-                message: 'Bir sorun oluştu. Lütfen tekrar deneyin!',
+                title: 'Warning',
+                message: 'A problem has occurred. Please try again!',
             });
-            console.error('Bir hata oluştu:', error);
+            console.error('A problem has occurred:', error);
         } finally {
             // Spinner'ı kapat
             spinner.style.display = 'none';
@@ -101,10 +101,10 @@ document.addEventListener("DOMContentLoaded", () => {
             
         } catch (error) {
             iziToast.error({
-                title: 'Hata',
-                message: 'Bir sorun oluştu. Lütfen tekrar deneyin!',
+                title: 'Warning',
+                message: 'A problem has occurred. Please try again!',
             });
-            console.error('Bir hata oluştu:', error);
+            console.error('A problem has occurred:', error);
         }
     });
 });
