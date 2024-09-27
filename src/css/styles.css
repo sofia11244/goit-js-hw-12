@@ -127,3 +127,8 @@ button {
         transform: rotate(360deg);
     }
 }
+
+#load-more {
+    margin: 0 auto;
+}
+
