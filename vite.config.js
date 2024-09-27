@@ -45,5 +45,8 @@ export default defineConfig(({ command }) => {
         sort: 'mobile-first',
       }),
     ],
+    optimizeDeps: {
+      include: ['izitoast', 'simplelightbox'], // Gerekli bağımlılıkları buraya ekle
+    },
   };
 });
